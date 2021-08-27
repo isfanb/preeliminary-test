@@ -24,10 +24,17 @@ header {
 	font-size: 2.3rem;
 }
 
+.hidden-title {
+	margin-bottom: 3em;
+	text-align: center;
+	color: #6a6868;
+	display: none;
+}
+
 blockquote {
 	color: #6a6868;
 	text-align: center;
-	margin-bottom: 10em;
+	margin-bottom:10em;
 }
 
 main {
@@ -92,7 +99,7 @@ main {
     margin-bottom: .80em;
 }
 
-section {
+.market {
 	background-color: #fff;
 	padding:  3em;
 	border-radius: 5px;
@@ -179,6 +186,14 @@ section {
 	display: none;
 }
 
+.submarket {
+	display: none;
+}
+
+.exmore {
+	display: none;
+}
+
 @media(max-width: 1024px) {
     header {
         width: 70%;
@@ -189,7 +204,7 @@ section {
     	width: 72%;
     }
 
-    section {
+    .market {
     	padding: 2em;
     }
 
@@ -210,24 +225,190 @@ section {
 		width: 95%;
 	}
 
-	h1 {
-		font-size: 1.3rem;
+	.title-header {
+		font-size: 1.3em;
 	}
 
 	blockquote {
 		font-size: .80rem;
+		margin-bottom: 5em;
+	}
+
+	main {
+		justify-content: flex-end;
+		padding-right: .30em;
 	}
 
 	.profesional {
-		background-image: none;
-		background-color: #555;
+		background-image: linear-gradient(to bottom, #636363, #5e5e5e, #585858, #535353, #4e4e4e);
+		padding-top: .50em;
+		margin-right: .30em;
 	}
 
-	.profesional h2, .profesional h6 {
-    display: none;
-}
+	.business {
+		background-image: linear-gradient(to bottom, #5f3fe2, #5939d9, #5233cf, #4c2dc6, #4527bd);
+		padding-top: .50em;
+		margin-right: .30em;
+	}
+
+	.enterprise {
+		background-image: linear-gradient(to bottom, #fe9501, #fa8d05, #f68609, #f27e0d, #ed7710);
+		padding-top: .50em;
+	}
+
+	.profesional h2, .profesional h6, .business h2, .business h6, .enterprise h2, .enterprise h6 {
+   		 display: none;
+	}
 
 	.invisible {
 		display: block;
+	}
+
+	.desc {
+		width: 33%;
+	}
+
+	.marketing {
+		display: none;
+	}
+
+	.hidden-title {
+		display: block;
+		font-size: 1em;
+	}
+
+	.section-benefits {
+		font-size: .50em;
+	}
+
+	.actives {
+		font-size: 2em;
+		margin-bottom: 1.5em;
+	}
+
+	.active {
+		font-size: 2em;
+		margin-bottom: 1em;
+	}
+
+	.market {
+		padding: .50em;
+		top: -1em;
+		box-shadow: none;
+	}
+
+	.expand {
+		display: none;
+	}
+
+	.done {
+		width: 64%;
+	}
+
+	.email {
+		background-color: #ff9700;
+		color: #fff;
+		padding-left: .30em;
+	}
+
+	.exmore {
+		display: inline-block;
+		font-size: 1.5em;
+		float: right;
+	}
+
+	.benefit {
+		margin-bottom: 3.3em;
+	}
+
+	.unlimited {
+		margin-bottom: 2.5em;
+	}
+
+	.convers {
+		margin-bottom: 0;
+	}
+
+	.submarket {
+		display: block;
+	}
+
+	.subs {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: .30em;
+		margin-bottom: 2em;
+	}
+
+	.subs li {
+		list-style: none;
+		font-size: .70em;
+		padding: 1em 1em;
+		border-radius: 3px;
+		color: #fff;
+	}
+
+	.subs li:nth-child(1) {
+		background-image: linear-gradient(to bottom, #636363, #5e5e5e, #585858, #535353, #4e4e4e);
+		margin-right: 1em;
+	}
+
+	.subs li:nth-child(2) {
+		background-image: linear-gradient(to bottom, #5f3fe2, #5939d9, #5233cf, #4c2dc6, #4527bd);
+		margin: 0 2em;
+	}
+
+	.subs li:nth-child(3) {
+		background-image: linear-gradient(to bottom, #fe9501, #fa8d05, #f68609, #f27e0d, #ed7710);
+		margin-left: 1em;
+	}
+
+	.sub {
+		display: flex;
+		justify-content: space-around;
+		padding: 0 5em;
+	}
+
+	.sub li {
+		list-style: none;
+		font-size: .70em;
+	}
+
+	.round {
+		float: left;
+		width: 15px;
+		height: 15px;
+		background-color: black;
+		border-radius: 100px;
+		margin-right: 1em;
+	}
+
+	.one {
+		background-image: linear-gradient(to bottom, #636363, #5e5e5e, #585858, #535353, #4e4e4e);
+	}
+
+	.two {
+		background-image: linear-gradient(to bottom, #5f3fe2, #5939d9, #5233cf, #4c2dc6, #4527bd);
+	}
+
+	.three {
+		background-image: linear-gradient(to bottom, #fe9501, #fa8d05, #f68609, #f27e0d, #ed7710);
+	}
+}
+
+@media (min-width: 320px) {
+
+	.round {
+		width: 10px;
+		height: 10px;
+		float: left;
+	}
+
+	.sub {
+		padding: 0 2em;
+	}
+
+	.sub li {
+		font-size: .50em;
 	}
 }
